@@ -41,6 +41,13 @@ export default class ViewPage extends Component {
                     />
                 </View>
 
+                <View style={styles.buttonContainer}>
+                    <Button
+                        title="TextInput"
+                        onPress={() => this.props.navigation.push('TextInputPage')}
+                    />
+                </View>
+
 
 
             </ScrollView>

@@ -12,6 +12,7 @@ import ViewPage from './src/pages/ViewPage';
 import CustomCmpnPage from './src/pages/view/CustomCmpnPage';
 import ImagePage from './src/pages/view/ImagePage';
 import ListPage from './src/pages/view/ListPage';
+import TextInputPage from './src/pages/view/TextInputPage';
 
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
@@ -32,6 +33,8 @@ const AppNavigator = createStackNavigator(
     ImagePage: ImagePage,
     // 视图-ListView
     ListPage: ListPage,
+    // 视图-输入文本框
+    TextInputPage: TextInputPage,
 
   },
   {

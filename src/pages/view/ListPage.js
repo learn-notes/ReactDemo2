@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, FlatList } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
 
 /**
  * List组件
@@ -46,12 +46,18 @@ export default class ListPage extends Component {
 
     _createItemView(item) {
         return (
-            <View >
-                <Text style={{ fontSize: 16 }}>
-                    {item.name}
-                </Text>
-            </View>
+            <TouchableOpacity onPress={this.onPressItem}>
+                <View style={{backgroundColor:'#242424'}}>
+                    <Text style={{ fontSize: 16, width: '100%', height: 50 }}>
+                        {item.name}
+                    </Text>
+                </View>
+            </TouchableOpacity>
         );
+    }
+
+    _onItemClick(item) {
+        console.log("page" + this.state.page + " = " + item.name)
     }
 }
 

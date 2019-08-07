@@ -22,6 +22,12 @@ export default class CustomCmpnPage extends Component {
             <View style={styles.container}>
                 <HeaderText>邪恶如同灯光下的阴影，即使看不见也会存在。</HeaderText>
                 <Text style={{ fontStyle: 'italic' }}>尼尔巴斯哥哥，你到底在哪？</Text>
+
+                {/* 相当于Android中的SpannableString */}
+                <Text >
+                    <Text style={{ fontWeight:'600' }}>我叫歌兰蒂斯。</Text>
+                    <Text style={{ fontStyle: 'italic' }}>勇士，我一直在等你。</Text>
+                </Text>
                 <Image
                     source={require('../../img/dnf_glds01.jpg')}
                     style={{ width: 200, height: 350, marginTop: 30, alignSelf: 'center' }}
